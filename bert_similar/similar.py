@@ -18,6 +18,10 @@ for line in open('question.txt', 'r'):
     if(len(line) > 0):
         sentences.append(line)
 
+    # 句子太多了 计算向量处理时间太久了 因此缩短一点
+    if(len(sentences) > 1000):
+        break
+
 
 with BertClient(port=5555, port_out=5556) as bc:
 
