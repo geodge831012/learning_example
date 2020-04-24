@@ -7,7 +7,9 @@
 再使用夹角余弦求两个句子的相似度
 
 参考链接:
+
 https://juejin.im/post/5e6ce1426fb9a07cdc60164c
+
 https://github.com/hanxiao/bert-as-service
 
 需要安装的安装包:
