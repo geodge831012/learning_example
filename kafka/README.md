@@ -1,0 +1,13 @@
+每台机器一个kafka进程就是一个broker，设置唯一的broker_id
+
+每个broker可以有多个topic和多个partiotion
+
+生产者插入和消费者读出可以选择具体的partition，如果没有指定，则随机选择，
+
+可以从具体一个partition指定生产消费，也可以统一看待所有的partition为一个整体
+
+partition可以有多个replication，保证数据的可用性（一个broker宕机，其他的broker可以继续使用）
+
+topic是逻辑概念
+
+
